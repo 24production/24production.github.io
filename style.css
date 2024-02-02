@@ -1,4 +1,4 @@
-* {
+html, body {
 
     margin: 0;
     padding: 0;
@@ -6,13 +6,15 @@
     scroll-behavior: smooth;
 }
 
+body {
+
+    background-color: rgba(0, 0, 255, 60%);
+}
+
 /* container */
 .container {
 
-    display: flex;
     min-height: 100vh;
-    min-width: min-content;
-    background-color: rgba(0, 0, 255, 60%);
     color: white;
 }
 
@@ -240,6 +242,7 @@
 
     margin: 10px 100px;
     text-align: center;
+    line-height: 15px;
 }
 
 .container .siswa .header p {
@@ -260,8 +263,9 @@
 .container .siswa .body .siswa-1, .container .siswa .body .siswa-2, .container .siswa .body .siswa-3, .container .siswa .body .siswa-4, .container .siswa .body .siswa-5, .container .siswa .body .siswa-6, .container .siswa .body .siswa-7, .container .siswa .body .siswa-8, .container .siswa .body .siswa-9, .container .siswa .body .siswa-10, .container .siswa .body .siswa-11, .container .siswa .body .siswa-12, .container .siswa .body .siswa-13, .container .siswa .body .siswa-14, .container .siswa .body .siswa-15, .container .siswa .body .siswa-16, .container .siswa .body .siswa-17, .container .siswa .body .siswa-18, .container .siswa .body .siswa-19, .container .siswa .body .siswa-20 {
 
     flex: 4;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
+    line-height: 5px;
     box-sizing: border-box;
 }
 
@@ -285,6 +289,7 @@
 
     margin: 10px 100px;
     text-align: center;
+    line-height: 15px;
 }
 
 .container .bts-2024 .header p {
@@ -308,6 +313,7 @@
     text-align: center;
     margin: 25px;
     font-size: medium;
+    line-height: 30px;
 }
 
 .container .bts-2024 .body button {
@@ -339,6 +345,7 @@
 
     margin: 10px 100px;
     text-align: center;
+    line-height: 15px;
 }
 
 .container .penghargaan .header p {
@@ -420,5 +427,28 @@
     75% {
 
         transform: scale(1);
+    }
+}
+
+/* media screen */
+@media screen and (max-width: 669.99px) {
+
+    .container .main, .container .sekolah, .container .pengurus, .container .siswa, .container .bts-2024, .container .penghargaan {
+
+        margin: 0;
+        flex-direction: column;
+    }
+    .container .main .main-2 img, .container .sekolah .sekolah-1 img, .container .penghargaan .body .body-1 img, .container .penghargaan .body .body-2 img {
+
+        max-width: 100%;
+        height: auto;
+    }
+    .container .penghargaan {
+
+        margin: 50px auto;
+    }
+    .container .penghargaan .header {
+
+        line-height: 30px;
     }
 }
