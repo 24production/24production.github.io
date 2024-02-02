@@ -4,4 +4,8 @@ $(document).ready(function() {
 
         alert('E-book belum tersedia saat ini.')
     })
+    $('.smk_gdp-btn').on('click', function() {
+
+        location.replace('https://www.smkdesaputera.sch.id/');
+    })
 })
