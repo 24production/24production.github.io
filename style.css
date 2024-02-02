@@ -1,0 +1,424 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* container */
+.container {
+
+    display: flex;
+    min-height: 100vh;
+    min-width: min-content;
+    background-color: rgba(0, 0, 255, 60%);
+    color: white;
+}
+
+/* main */
+.container .main, .container .sekolah {
+
+    margin: 10px 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .main .main-1 {
+
+    /* border: 1px solid black; */
+    flex: 2;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .main .main-1 h1 {
+
+    margin: 10px auto;
+}
+
+.container .main .main-1 .desc {
+    
+    line-height: 25px;
+    text-align: justify;
+}
+
+.container .main .main-1 .offer {
+
+    font-weight: bolder;
+    margin: 15px auto;
+}
+
+.container .main .main-1 .main-btn {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .main .main-1 .main-btn .btn-1, .container .main .main-1 .main-btn .btn-2, .container .main .main-1 .main-btn .btn-3, .container .main .main-1 .main-btn .btn-4, .container .main .main-1 .main-btn .btn-5, .container .main .main-1 .main-btn .btn-6 {
+
+    text-decoration: none;
+    color: white;
+    padding: 7px 10px;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.container .main .main-1 .main-btn .btn-1:hover, .container .main .main-1 .main-btn .btn-2:hover, .container .main .main-1 .main-btn .btn-3:hover, .container .main .main-1 .main-btn .btn-4:hover, .container .main .main-1 .main-btn .btn-5:hover, .container .main .main-1 .main-btn .btn-6:hover {
+
+    background-color: white;
+    color: rgba(0, 0, 255, 60%);
+}
+
+.container .main .main-1 .main-btn .btn-5 {
+
+    background-color: salmon;
+}
+
+.container .main .main-1 .main-btn .btn-6 {
+
+    background-color: rgb(231, 81, 153);
+}
+
+.container .main .main-2 {
+
+    /* border: 1px solid black; */
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container .main .main-2 img {
+
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.container .main .main-2 img:hover {
+
+    transform: scale(1.05) rotate(5deg);
+}
+
+.container .main .main-2 .caption {
+
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 50px;
+}
+
+.container .main .main-2 .caption p {
+
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    animation: NgeZoom 2s infinite;
+}
+
+/* sekolah */
+.container .sekolah .sekolah-1 {
+
+    /* border: 1px solid black; */
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .sekolah .sekolah-1 img {
+
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.container .sekolah .sekolah-1 img:hover {
+
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.container .sekolah .sekolah-2 {
+
+    /* border: 1px solid black; */
+    flex: 2;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container .sekolah .sekolah-2 h2 {
+
+    margin: 10px auto;
+}
+
+.container .sekolah .sekolah-2 p {
+
+    line-height: 25px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.container .sekolah .sekolah-2 button {
+
+    padding: 7px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: medium;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.container .sekolah .sekolah-2 button:hover {
+
+    background-color: white;
+    color: rgba(0, 0, 255, 60%);
+}
+
+/* pengurus */
+.container .pengurus {
+
+    margin: 100px;
+}
+
+.container .pengurus .header {
+
+    margin: 10px 100px;
+    text-align: center;
+}
+
+.container .pengurus .body {
+
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.container .pengurus .body .pengurus-1, .container .pengurus .body .pengurus-2, .container .pengurus .body .pengurus-3, .container .pengurus .body .pengurus-4 {
+
+    flex: 4;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .pengurus .body .pengurus-1 img, .container .pengurus .body .pengurus-2 img, .container .pengurus .body .pengurus-3 img, .container .pengurus .body .pengurus-4 img {
+
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 20px auto;
+    transition: .3s ease-in-out;
+}
+
+.container .pengurus .body .pengurus-1 img:hover, .container .pengurus .body .pengurus-2 img:hover, .container .pengurus .body .pengurus-3 img:hover, .container .pengurus .body .pengurus-4 img:hover {
+
+    transform: scale(1.05);
+}
+
+/* siswa */
+.container .siswa {
+
+    margin: 100px;
+}
+
+.container .siswa .header {
+
+    margin: 10px 100px;
+    text-align: center;
+}
+
+.container .siswa .header p {
+
+    margin: 5px auto;
+    font-size: small;
+}
+
+.container .siswa .body {
+
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.container .siswa .body .siswa-1, .container .siswa .body .siswa-2, .container .siswa .body .siswa-3, .container .siswa .body .siswa-4, .container .siswa .body .siswa-5, .container .siswa .body .siswa-6, .container .siswa .body .siswa-7, .container .siswa .body .siswa-8, .container .siswa .body .siswa-9, .container .siswa .body .siswa-10, .container .siswa .body .siswa-11, .container .siswa .body .siswa-12, .container .siswa .body .siswa-13, .container .siswa .body .siswa-14, .container .siswa .body .siswa-15, .container .siswa .body .siswa-16, .container .siswa .body .siswa-17, .container .siswa .body .siswa-18, .container .siswa .body .siswa-19, .container .siswa .body .siswa-20 {
+
+    flex: 4;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container .siswa .body .siswa-1 img, .container .siswa .body .siswa-2 img, .container .siswa .body .siswa-3 img, .container .siswa .body .siswa-4 img, .container .siswa .body .siswa-5 img, .container .siswa .body .siswa-6 img, .container .siswa .body .siswa-7 img, .container .siswa .body .siswa-8 img, .container .siswa .body .siswa-9 img, .container .siswa .body .siswa-10 img, .container .siswa .body .siswa-11 img, .container .siswa .body .siswa-12 img, .container .siswa .body .siswa-13 img, .container .siswa .body .siswa-14 img, .container .siswa .body .siswa-15 img, .container .siswa .body .siswa-16 img, .container .siswa .body .siswa-17 img, .container .siswa .body .siswa-18 img, .container .siswa .body .siswa-19 img, .container .siswa .body .siswa-20 img {
+
+    width: 160px;
+    height: 160px;
+    border: 2px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+/* bts 2024 */
+.container .bts-2024 {
+
+    margin: 100px;
+}
+
+.container .bts-2024 .header {
+
+    margin: 10px 100px;
+    text-align: center;
+}
+
+.container .bts-2024 .header p {
+
+    margin: 5px auto;
+    font-size: small;
+}
+
+.container .bts-2024 .body {
+
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.container .bts-2024 .body p {
+
+    flex: 2;
+    text-align: center;
+    margin: 25px;
+    font-size: medium;
+}
+
+.container .bts-2024 .body button {
+
+    padding: 8px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    margin: auto 25px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.container .bts-2024 .body button:hover {
+
+    background-color: white;
+    color: rgba(0, 0, 255, 60%);
+}
+
+/* penghargaan */
+.container .penghargaan {
+
+    margin: 100px;
+}
+
+.container .penghargaan .header {
+
+    margin: 10px 100px;
+    text-align: center;
+}
+
+.container .penghargaan .header p {
+
+    margin: 5px auto;
+    font-size: small;
+}
+
+.container .penghargaan .body {
+
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.container .penghargaan .body .body-1 {
+
+    flex: 2;
+    text-align: left;
+    margin: 25px;
+    font-size: larger;
+}
+
+.container .penghargaan .body .body-2 {
+
+    flex: 2;
+    text-align: right;
+    margin: 25px;
+    font-size: larger;
+}
+
+.container .penghargaan .body .body-1 h3, .container .penghargaan .body .body-2 h3 {
+
+    margin: 10px auto;
+    line-height: 30px;
+}
+
+.container .penghargaan .body .body-1 img, .container .penghargaan .body .body-2 img {
+
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    /* margin: 20px; */
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.container .penghargaan .body .body-1 img:hover, .container .penghargaan .body .body-2 img:hover {
+
+    transform: scale(1.03);
+}
+
+/* footer */
+.container footer {
+
+    padding: 20px;
+    border-top: 1px solid white;
+    background-color: rgba(0, 0, 255, 20%);
+    text-align: center;
+}
+
+/* animation */
+@keyframes NgeZoom {
+    
+    25% {
+
+        transform: scale(1.2);
+    }
+    45% {
+
+        transform: scale(1.2) rotate(7deg);
+    }
+    55% {
+
+        transform: scale(1.2) rotate(-7deg);
+    }
+    75% {
+
+        transform: scale(1);
+    }
+}
